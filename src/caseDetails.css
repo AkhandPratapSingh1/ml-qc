@@ -1,0 +1,273 @@
+/* Styles for the form */
+form {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Styles for status and buttons */
+.status-Approved,
+.status-Rejected,
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.status-Approved {
+  background-color: rgb(78, 235, 78);
+}
+
+.status-Rejected {
+  background-color: lightcoral;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for panels */
+.flex-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.left-panel {
+  flex: 1;
+  transition: flex 0.5s;
+  overflow: hidden;
+  border-right: 1px solid #ccc;
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visible {
+  flex: 1;
+}
+
+.right-panel {
+  flex: 1;
+  padding: 00px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+/* Styles for labels and input fields within .case-form */
+.case-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.case-form input {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  transition: border-color 0.3s;
+}
+
+.case-form input:focus {
+  border-color: #007bff;
+}
+
+/* Styles for the specific div containing the input fields within .case-form */
+.case-form div {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.case-form h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Styles for labels and input fields within the specific div within .case-form */
+.case-form div label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.case-form div input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+.case-form div input:focus {
+  border-color: #007bff;
+}
+
+/* Styles for the Status input field */
+label[for="Status"] {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input[type="text"][name="Status"] {
+  width: auto;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  transition: border-color 0.3s;
+  text-align: center;
+  background-color: #228B22;
+  color: white;
+}
+
+input[type="text"][name="Status"][readonly] {
+  cursor: not-allowed;
+}
+
+/* Styles for Approved and Rejected statuses */
+input[type="text"][name="Status"].status-Approved {
+  background-color: rgb(31, 238, 31);
+}
+
+input[type="text"][name="Status"].status-Rejected {
+  background-color: lightcoral;
+}
+
+input[type="text"][name="Status"]:focus {
+  border-color: #007bff;
+}
+
+/* Styles for action buttons */
+.action-button {
+  width: 200px;
+}
+
+/* Button Container Styles */
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Approved Button Styles */
+.approve-button {
+  width: 200px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.approve-button:hover {
+  background-color: darkgreen;
+}
+
+/* Reject Button Styles */
+.reject-button {
+  width: 200px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.reject-button:hover {
+  background-color: darkred;
+}
+
+/* Styles for iframes container */
+.iframes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-panel,
+.right-panel {
+  width: 100%;
+  padding: 00px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Styles for the form container */
+.form-container {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+/* Styles for the form */
+form {
+  flex: 1; /* Set form to take 50% width */
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for iframes container */
+.iframes-container {
+  flex: 1; /* Set iframes container to take 50% width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-panel,
+.right-panel {
+  width: 100%; /* Set iframes to take 100% width within the iframes container */
+  padding: 0px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
