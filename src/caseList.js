@@ -138,7 +138,9 @@ function CaseList() {
   return (
     <div className="case-list-container">
       <div className="sidebar">
-        {/* Your sidebar content */}
+        <p>
+"I'm currently facing an issue as I don't have any demo data, which is why it's displaying this way. I'm using a remote database from my previous company and actively working on making it fully functional. However, I no longer have access to the API file and database. If you have any suggestions or solutions, please feel free to leave a message."</p>
+<button><a href='https://www.google.com' target='_blank'>Leave A Message</a></button>
       </div>
       <div className="main-content">
         <h1>Case List</h1>
